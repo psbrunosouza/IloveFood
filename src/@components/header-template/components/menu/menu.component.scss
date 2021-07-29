@@ -10,6 +10,12 @@ ul.menu {
     margin-left: 24px;
   }
 
+  li {
+    a {
+      color: $text-light-color;
+    }
+  }
+
   li.brand{
     font-weight: 500;
   }
