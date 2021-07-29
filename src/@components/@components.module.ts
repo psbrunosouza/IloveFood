@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HeaderTemplateComponent } from './header-template/header-template.component';
 import { FooterTemplateComponent } from './footer-template/footer-template.component';
 import { MenuComponent } from './header-template/components/menu/menu.component';
+import { ButtonComponent } from './button/button.component';
 
 
 
@@ -10,14 +11,16 @@ import { MenuComponent } from './header-template/components/menu/menu.component'
   declarations: [
     HeaderTemplateComponent,
     FooterTemplateComponent,
-    MenuComponent
+    MenuComponent,
+    ButtonComponent
   ],
   imports: [
     CommonModule
   ],
   exports: [
     HeaderTemplateComponent,
-    FooterTemplateComponent
+    FooterTemplateComponent,
+    ButtonComponent
   ]
 })
 export class ComponentsModule { }

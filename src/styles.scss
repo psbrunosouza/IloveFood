@@ -7,10 +7,12 @@
 }
 
 body {
-  background-color: $bg-light-color;
   font-family: $p-font;
   font-size: 20px;
+  line-height: 30px;
   color: $text-dark-color;
+  background: $bg-light-color url('https://source.unsplash.com/1600x900/?food');
+  object-fit: cover;
 }
 
 li {
