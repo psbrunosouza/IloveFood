@@ -1,4 +1,4 @@
-@import '../../@theme/theme.scss';
+@import '../../../../@theme/theme.scss';
 
 ul.menu {
   display: flex;
@@ -13,13 +13,13 @@ ul.menu {
   li.brand{
     font-weight: 500;
   }
-
-  .logo{
-  
-  }
   
   li.item{
     font-weight: 400;
+
+    a {
+      font-size: 16px;
+    }
    
     div{
       border-bottom: 3px solid #fff;
