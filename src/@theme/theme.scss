@@ -1,0 +1,20 @@
+/** imports */
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;400&display=swap');
+
+/** Main colors */
+$base-rubro-color: #e63946;
+$bg-light-color: #fafafd;
+$text-light-color: #fafafd;
+$text-dark-color: #051a25;
+
+/** hover */
+$base-rubro-hover-color: #ee606c;
+
+/** gradients */
+$header-gd-color: linear-gradient(90deg, rgba(241,100,111,1) 0%, rgba(238,48,97,1) 50%, rgba(247,49,220,1) 100%); 
+$text-gd-color: linear-gradient(90deg, rgba(255,185,190,1) 0%, rgba(138,117,244,1) 50%, rgba(255,63,229,1) 100%);
+
+/** fonts */
+$header-font: 'Asap', sans-serif;
+$p-font: 'Roboto Slab', serif;

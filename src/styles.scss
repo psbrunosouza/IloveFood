@@ -1,0 +1,28 @@
+@import '../src/@theme/theme.scss';
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: $p-font;
+  font-size: 20px;
+  line-height: 30px;
+  color: $text-dark-color;
+  background: $bg-light-color;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $text-dark-color;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: $header-font;
+}

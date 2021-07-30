@@ -1,0 +1,41 @@
+@import '../../../@theme/theme.scss';
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $bg-light-color url('https://source.unsplash.com/1600x900/?food');
+  object-fit: cover;
+  height: calc(100vh - 48px);
+
+
+
+  div {
+    width: 880px;
+    height: 480px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 17px -4px rgba(0,0,0,0.27);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9;
+
+    h1 {
+      margin-bottom: 12px;
+    }
+    
+    .header-divider{
+      width: 260px;
+      height: 4px;
+      border-radius: 0;
+      background: $base-rubro-color;
+      margin-bottom: 42px;
+    }
+
+    p{
+      margin-bottom: 12px;
+    }
+  }
+}
