@@ -4,7 +4,11 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 80px;
+  background: $bg-light-color url('https://source.unsplash.com/1600x900/?food');
+  object-fit: cover;
+  height: calc(100vh - 48px);
+
+
 
   div {
     width: 880px;
@@ -16,8 +20,17 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    opacity: 0.9;
 
     h1 {
+      margin-bottom: 12px;
+    }
+    
+    .header-divider{
+      width: 260px;
+      height: 4px;
+      border-radius: 0;
+      background: $base-rubro-color;
       margin-bottom: 42px;
     }
 
