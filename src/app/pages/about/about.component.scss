@@ -1,0 +1,30 @@
+@import "../../../@theme/theme.scss";
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  header {
+    margin-bottom: 6px;
+  }
+
+  .header-divider {
+    width: 260px;
+    height: 2px;
+    border-radius: 0;
+    background: $base-rubro-color;
+    margin-bottom: 16px;
+  }
+
+  section {
+    margin-top: 120px;
+    width: 660px;
+  }
+
+  q{
+    margin-top: 12px;
+    text-align: right;
+    display: block;
+  }
+}
