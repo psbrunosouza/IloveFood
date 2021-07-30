@@ -1,0 +1,40 @@
+@import '../../../../@theme/theme.scss';
+
+ul.menu {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  margin-left: 42px;
+
+  li + li{
+    margin-left: 24px;
+  }
+
+  li {
+    a {
+      color: $text-light-color;
+    }
+  }
+
+  li.brand{
+    font-weight: 500;
+  }
+  
+  li.item{
+    font-weight: 400;
+
+    a {
+      font-size: 16px;
+    }
+   
+    div{
+      border-bottom: 3px solid #fff;
+      width: 32px;
+      transition: width ease-in-out 0.2s;
+    }
+
+    &:hover div{
+      width: 100%;
+    }
+  }
+}

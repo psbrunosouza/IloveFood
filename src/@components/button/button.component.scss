@@ -1,0 +1,17 @@
+@import '../../@theme/theme.scss';
+
+button {
+  width: 160px;
+  height: 40px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: $base-rubro-color;
+  color: #fff;
+  transition: ease-in-out 0.2s;
+
+  &:hover{
+    background-color: $base-rubro-hover-color;
+  }
+}
