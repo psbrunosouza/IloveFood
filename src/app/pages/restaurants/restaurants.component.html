@@ -3,11 +3,10 @@
     <header><h1>All restaurants</h1></header>
     <div class="header-divider"></div>
     <div class="card-list">
-      <lov-restaurant-card></lov-restaurant-card>
-      <lov-restaurant-card></lov-restaurant-card>
-      <lov-restaurant-card></lov-restaurant-card>
-      <lov-restaurant-card></lov-restaurant-card>
-      <lov-restaurant-card></lov-restaurant-card>
+      <lov-restaurant-card
+        *ngFor="let restaurant of restaurants"
+        [restaurant]="restaurant"
+      ></lov-restaurant-card>
     </div>
   </section>
 </main>

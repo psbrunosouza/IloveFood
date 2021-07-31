@@ -3,15 +3,15 @@
     <div class="rate">
       <mat-icon >star_outline</mat-icon>
 
-      <p class="text-rate">{{ rate }}</p>
+      <p class="text-rate">{{ restaurant.rating }}</p>
     </div>
-    <img [src]="image" />
+    <img [src]="restaurant.imagePath" />
   </div>
   <div class="content">
-    <h3 class="title">{{ title }}</h3>
-    <p class="description">{{ description }}</p>
+    <h3 class="title">{{ restaurant.name }}</h3>
+    <p class="description">{{ restaurant.category }}</p>
     <div class="actions">
-      <p></p>
+      <p class="tag">{{ restaurant.deliveryEstimate}} delivery estimate</p>
       <tem-button text="ORDER"></tem-button>
     </div>
   </div>
