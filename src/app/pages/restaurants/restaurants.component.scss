@@ -4,7 +4,8 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
+
   header {
     margin-bottom: 6px;
   }
@@ -17,17 +18,16 @@ main {
   }
 
   section {
-    margin-top: 120px;
-    width: 660px;
+    margin: 120px 0 48px 0;
+    width: 920px;
 
     div.card-list {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
-      overflow-x: hidden;
+      justify-content: center;
 
-      div {
-        margin-top: 12px;
+      lov-restaurant-card {
+        margin: 12px 12px;
       }
     }
   }

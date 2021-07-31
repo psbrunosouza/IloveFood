@@ -5,9 +5,6 @@ import { FooterTemplateComponent } from './footer-template/footer-template.compo
 import { MenuComponent } from './header-template/components/menu/menu.component';
 import { ButtonComponent } from './button/button.component';
 import { RouterModule } from '@angular/router';
-import { CardComponent } from './card/card.component';
-
-
 
 @NgModule({
   declarations: [
@@ -15,17 +12,15 @@ import { CardComponent } from './card/card.component';
     FooterTemplateComponent,
     MenuComponent,
     ButtonComponent,
-    CardComponent
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
   ],
   exports: [
     HeaderTemplateComponent,
     FooterTemplateComponent,
     ButtonComponent,
-    CardComponent
   ]
 })
 export class ComponentsModule { }

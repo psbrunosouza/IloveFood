@@ -1,3 +1,38 @@
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@use '~@angular/material' as mat;
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat.core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$i-love-food-primary: mat.define-palette(mat.$indigo-palette);
+$i-love-food-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$i-love-food-warn: mat.define-palette(mat.$red-palette);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$i-love-food-theme: mat.define-light-theme((
+  color: (
+    primary: $i-love-food-primary,
+    accent: $i-love-food-accent,
+    warn: $i-love-food-warn,
+  )
+));
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include mat.all-component-themes($i-love-food-theme);
+
 @import '../src/@theme/theme.scss';
 
 *{
@@ -7,11 +42,14 @@
 }
 
 body {
+  width: 100vw;
   font-family: $p-font;
   font-size: 20px;
   line-height: 30px;
   color: $text-dark-color;
   background: $bg-light-color;
+  overflow-x: hidden;
+
 }
 
 li {
@@ -31,3 +69,5 @@ q{
   color: $text-quote-color;
   opacity: 0.6;
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

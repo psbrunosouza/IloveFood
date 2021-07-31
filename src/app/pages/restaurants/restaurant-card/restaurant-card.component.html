@@ -1,5 +1,12 @@
 <div class="card">
-  <img class="image" [src]="image" />
+  <div class="image">
+    <div class="rate">
+      <mat-icon >star_outline</mat-icon>
+
+      <p class="text-rate">{{ rate }}</p>
+    </div>
+    <img [src]="image" />
+  </div>
   <div class="content">
     <h3 class="title">{{ title }}</h3>
     <p class="description">{{ description }}</p>
@@ -8,5 +15,4 @@
       <tem-button text="ORDER"></tem-button>
     </div>
   </div>
-  
 </div>

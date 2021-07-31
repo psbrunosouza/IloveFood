@@ -1,0 +1,74 @@
+@import '../../../../@theme/theme.scss';
+
+div.card {
+  width: 380px;
+  min-height: 30px;
+  background-color: #eeeded;
+
+  div.image {
+    width: 100%;
+    min-height: 280px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+
+    div.rate {
+      position: absolute;
+      padding: 2px 12px;
+      background-color: #ffbe00;
+      right: 0;
+      top: 0;
+      margin: 24px 24px 0 0;
+      z-index: 100;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      mat-icon{
+        color: $text-light-color;
+      }
+
+      p.text-rate{
+        font-weight: 400;
+        color: $text-light-color;
+      }
+    }
+
+    img {
+      max-width: 100%;
+      min-height: 280px;
+      vertical-align: top;
+      object-fit: cover;
+      transition: all 0.5s;
+    }
+
+    &:hover img {
+      transform: scale(1.1) rotate(5deg);
+    }
+  }
+
+  div.content {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+
+    h3.title {
+      font-size: 24px;
+    }
+
+    p.description {
+      font-size: 20px;
+    }
+
+    div.actions {
+      display: flex;
+      justify-content: flex-end;
+      padding: 6px;
+
+      button {
+        margin-right: 12px;
+      }
+    }
+  }
+}

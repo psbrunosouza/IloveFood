@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeModule } from './pages/home/home.module';
 import { RestaurantsModule } from './pages/restaurants/restaurants.module';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [AppComponent],
@@ -14,6 +15,7 @@ import { RestaurantsModule } from './pages/restaurants/restaurants.module';
     ComponentsModule,
     HomeModule,
     RestaurantsModule,
+    NoopAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
