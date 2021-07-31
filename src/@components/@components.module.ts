@@ -5,6 +5,7 @@ import { FooterTemplateComponent } from './footer-template/footer-template.compo
 import { MenuComponent } from './header-template/components/menu/menu.component';
 import { ButtonComponent } from './button/button.component';
 import { RouterModule } from '@angular/router';
+import { CardComponent } from './card/card.component';
 
 
 
@@ -13,7 +14,8 @@ import { RouterModule } from '@angular/router';
     HeaderTemplateComponent,
     FooterTemplateComponent,
     MenuComponent,
-    ButtonComponent
+    ButtonComponent,
+    CardComponent
   ],
   imports: [
     CommonModule,
@@ -22,7 +24,8 @@ import { RouterModule } from '@angular/router';
   exports: [
     HeaderTemplateComponent,
     FooterTemplateComponent,
-    ButtonComponent
+    ButtonComponent,
+    CardComponent
   ]
 })
 export class ComponentsModule { }
