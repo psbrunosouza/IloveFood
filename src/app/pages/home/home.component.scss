@@ -8,7 +8,7 @@ main {
   object-fit: cover;
   height: calc(100vh - 48px);
 
-  div {
+  section {
     width: 880px;
     height: 480px;
     background-color: #fff;
@@ -20,11 +20,13 @@ main {
     align-items: center;
     opacity: 0.9;
 
-    h1 {
-      margin-bottom: 12px;
+    header {
+      h1 {
+        margin-bottom: 12px;
+      }
     }
 
-    .header-divider {
+    div.header-divider {
       width: 260px;
       height: 4px;
       border-radius: 0;
@@ -35,7 +37,5 @@ main {
     p {
       margin-bottom: 12px;
     }
-
-    
   }
 }

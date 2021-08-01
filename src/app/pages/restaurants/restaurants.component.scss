@@ -1,0 +1,34 @@
+@import "../../../@theme/theme.scss";
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  header {
+    margin-bottom: 6px;
+  }
+  div.header-divider {
+    width: 260px;
+    height: 2px;
+    border-radius: 0;
+    background: $base-rubro-color;
+    margin-bottom: 16px;
+  }
+
+  section {
+    margin: 120px 0 48px 0;
+    width: 920px;
+
+    div.card-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      lov-restaurant-card {
+        margin: 12px 12px;
+      }
+    }
+  }
+}
