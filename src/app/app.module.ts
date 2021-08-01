@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeModule } from './pages/home/home.module';
 import { RestaurantsModule } from './pages/restaurants/restaurants.module';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [AppComponent],
@@ -16,8 +17,8 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
     HomeModule,
     RestaurantsModule,
     NoopAnimationsModule,
+    HttpClientModule
   ],
-  providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

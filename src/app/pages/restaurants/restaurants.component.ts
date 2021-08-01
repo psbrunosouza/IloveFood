@@ -1,35 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 import { Restaurant } from '@core/data/restaurant';
+import { RestaurantsService } from './restaurants.service';
 
 @Component({
   selector: 'lov-restaurants',
   templateUrl: './restaurants.component.html',
-  styleUrls: ['./restaurants.component.scss']
+  styleUrls: ['./restaurants.component.scss'],
 })
 export class RestaurantsComponent implements OnInit {
+  restaurants: Restaurant[];
 
-  restaurants: Restaurant[] = [
-    {
-      id: "bread-bakery",
-      name: "Bread & Bakery",
-      category: "Padaria",
-      deliveryEstimate: "25m",
-      rating: 4.9,
-      imagePath: "assets/img/restaurants/breadbakery.png",
-    },
-    {
-      id: "burger-house",
-      name: "Burger House",
-      category: "Hamburgers",
-      deliveryEstimate: "100m",
-      rating: 3.5,
-      imagePath: "assets/img/restaurants/burgerhouse.png",
-    },
-  ];
-
-  constructor() { }
+  constructor(private restaurantsService: RestaurantsService) {}
 
   ngOnInit(): void {
+    this.restaurantsService
+      .listRestaurants()
+      .subscribe((response) => (this.restaurants = response));
   }
-
 }
