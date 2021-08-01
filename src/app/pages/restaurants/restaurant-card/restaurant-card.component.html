@@ -1,0 +1,18 @@
+<div class="card">
+  <div class="image">
+    <div class="rate">
+      <mat-icon >star_outline</mat-icon>
+
+      <p class="text-rate">{{ restaurant.rating }}</p>
+    </div>
+    <img [src]="restaurant.imagePath" />
+  </div>
+  <div class="content">
+    <h3 class="title">{{ restaurant.name }}</h3>
+    <p class="description">{{ restaurant.category }}</p>
+    <div class="actions">
+      <p class="tag">{{ restaurant.deliveryEstimate}} delivery estimate</p>
+      <tem-button text="ORDER"></tem-button>
+    </div>
+  </div>
+</div>

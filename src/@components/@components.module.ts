@@ -6,23 +6,21 @@ import { MenuComponent } from './header-template/components/menu/menu.component'
 import { ButtonComponent } from './button/button.component';
 import { RouterModule } from '@angular/router';
 
-
-
 @NgModule({
   declarations: [
     HeaderTemplateComponent,
     FooterTemplateComponent,
     MenuComponent,
-    ButtonComponent
+    ButtonComponent,
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
   ],
   exports: [
     HeaderTemplateComponent,
     FooterTemplateComponent,
-    ButtonComponent
+    ButtonComponent,
   ]
 })
 export class ComponentsModule { }
