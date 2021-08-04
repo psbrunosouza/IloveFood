@@ -71,10 +71,11 @@ div.card {
       }
 
       p.tag{
-        background-color: #ffbe00;
-        color: $text-light-color;
+        color: #808080;
         padding: 2px 8px;
         border-radius: 6px;
+        display: flex;
+        align-items: center;
       }
     }
   }
