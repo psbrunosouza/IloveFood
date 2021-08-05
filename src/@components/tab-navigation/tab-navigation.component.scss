@@ -1,0 +1,28 @@
+div.tab {
+  display: flex;
+  align-items: center;
+  height: 64px;
+  width: 100%;
+  z-index: 200;
+  margin-bottom: -4px;
+
+  div {
+    height: 100%;
+    padding: 0 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+      font-size: 16px;
+    }
+  }
+}
+
+com-divider {
+  z-index: 100;
+}
+
+.active{
+  border-bottom: 4px solid #ec3667;
+}
