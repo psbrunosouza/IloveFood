@@ -15,8 +15,8 @@ div.container {
         div.brand-content {
           display: flex;
           height: 100%;
-          border-bottom-left-radius: 6px;
-          border-top-left-radius: 6px;
+         border-radius: 6px;
+          position: relative;
 
           div.image {
             border-bottom-left-radius: 6px;
@@ -25,9 +25,10 @@ div.container {
             height: 100%;
             z-index: 100;
             background-size: cover;
-            width: 224px;
+            width: 50%;
+            background-position: center;
             position: relative;
-            opacity: 0.7;
+            opacity: 0.8;
             transition: opacity 0.2s;
           }
 
@@ -43,6 +44,49 @@ div.container {
             height: 130%;
             background: #fff;
             filter: blur(16px);
+          }
+
+          div.info{
+            position: absolute;
+            z-index: 300;
+            bottom: 0;
+            left: 0;
+            color: #000;
+            margin: 0 0 16px 16px;
+
+            h3{
+             
+            }
+          }
+         
+
+          div.score {
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin: 16px 0 0 16px;
+            z-index: 300;
+            display: flex;
+            align-content: center;
+            color: #000;
+
+          }
+
+          div.category {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            margin: 0 16px 16px 0;
+            z-index: 300;
+            font-style: italic;
+          }
+
+          div.opening-hours {
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin: 16px 16px 0 0;
+            z-index: 300;
           }
         }
 

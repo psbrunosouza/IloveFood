@@ -14,7 +14,7 @@
       <p class="tag">
         <mat-icon>two_wheeler</mat-icon> {{ restaurant.deliveryEstimate }}
       </p>
-      <tem-button text="ORDER"></tem-button>
+      <tem-button text="ORDER" (click)="seeRestaurant(restaurant.id)"></tem-button>
     </div>
   </div>
 </div>
