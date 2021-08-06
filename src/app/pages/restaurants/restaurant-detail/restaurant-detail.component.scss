@@ -15,7 +15,7 @@ div.container {
         div.brand-content {
           display: flex;
           height: 100%;
-         border-radius: 6px;
+          border-radius: 6px;
           position: relative;
 
           div.image {
@@ -46,7 +46,7 @@ div.container {
             filter: blur(16px);
           }
 
-          div.info{
+          div.info {
             position: absolute;
             z-index: 300;
             bottom: 0;
@@ -54,11 +54,13 @@ div.container {
             color: #000;
             margin: 0 0 16px 16px;
 
-            h3{
-             
+            h3 {
+            }
+
+            span {
+              
             }
           }
-         
 
           div.score {
             position: absolute;
@@ -69,7 +71,6 @@ div.container {
             display: flex;
             align-content: center;
             color: #000;
-
           }
 
           div.category {

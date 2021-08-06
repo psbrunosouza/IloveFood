@@ -3,17 +3,17 @@
     <section>
       <section class="brand">
         <div class="brand-content">
-          <div class="image" style="background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/17/20/f1/2c/photo0jpg.jpg');"></div>
-          <diV class="score"><mat-icon>star_outline</mat-icon> 5.0</diV>
+          <div class="image" style="background: url(restaurant.imagePath)"></div>
+          <diV class="score"><mat-icon>star_outline</mat-icon> {{restaurant.rating}}</diV>
           <div class="info">
-            <h3>Restaurant name</h3>
-            <span>A bread bakery tem quarenta anos de mercado...</span>
+            <h3>{{restaurant.name}}</h3>
+            <span>{{restaurant.about?.substr(0, 42) + '...'}}</span>
           </div>
           <div class="category">
-            <p>Padaria</p>
+            <p>{{restaurant.category}}</p>
           </div>
           <div class="opening-hours">
-            <p>Funciona de segunda a sexta, das 8h as 23h</p>
+            <p>{{ restaurant.hours }}</p>
           </div>
         </div>
       </section>

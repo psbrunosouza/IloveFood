@@ -9,7 +9,7 @@ import { RestaurantsService } from '../restaurants.service';
   styleUrls: ['./restaurant-detail.component.scss'],
 })
 export class RestaurantDetailComponent implements OnInit {
-  restaurant: Restaurant;
+  restaurant: Restaurant = new Restaurant();
 
   constructor(
     private restaurantsService: RestaurantsService,
@@ -19,6 +19,9 @@ export class RestaurantDetailComponent implements OnInit {
   ngOnInit(): void {
     this.restaurantsService
       .findRestaurant(this.route.snapshot.params['id'])
-      .subscribe((restaurant) => this.restaurant = restaurant);
+      .subscribe((restaurant) => {
+        this.restaurant = restaurant;
+        console.log(this.restaurant);
+      });
   }
 }
