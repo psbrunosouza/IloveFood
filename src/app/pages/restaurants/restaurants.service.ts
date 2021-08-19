@@ -15,6 +15,8 @@ export class RestaurantsService {
   }
 
   findRestaurant(id: string): Observable<Restaurant> {
-    return this.http.get<Restaurant>(`${environment.base_url}/restaurants/${id}`);
+    return this.http.get<Restaurant>(
+      `${environment.base_url}/restaurants/${id}`
+    );
   }
 }

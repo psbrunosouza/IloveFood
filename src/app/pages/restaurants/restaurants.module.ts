@@ -8,6 +8,7 @@ import { RestaurantDetailComponent } from './restaurant-detail/restaurant-detail
 import { MenuComponent } from './restaurant-detail/menu/menu.component';
 import { CartComponent } from './restaurant-detail/cart/cart.component';
 import { MenuItemComponent } from './restaurant-detail/menu/menu-item/menu-item.component';
+import { ReviewsComponent } from './restaurant-detail/reviews/reviews.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { MenuItemComponent } from './restaurant-detail/menu/menu-item/menu-item.
     MenuComponent,
     CartComponent,
     MenuItemComponent,
+    ReviewsComponent,
   ],
   imports: [CommonModule, ComponentsModule, MatIconModule],
 })
