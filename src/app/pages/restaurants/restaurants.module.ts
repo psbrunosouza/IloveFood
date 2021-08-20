@@ -9,6 +9,7 @@ import { MenuComponent } from './restaurant-detail/menu/menu.component';
 import { CartComponent } from './restaurant-detail/cart/cart.component';
 import { MenuItemComponent } from './restaurant-detail/menu/menu-item/menu-item.component';
 import { ReviewsComponent } from './restaurant-detail/reviews/reviews.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,6 @@ import { ReviewsComponent } from './restaurant-detail/reviews/reviews.component'
     MenuItemComponent,
     ReviewsComponent,
   ],
-  imports: [CommonModule, ComponentsModule, MatIconModule],
+  imports: [CommonModule, ComponentsModule, MatIconModule, RouterModule],
 })
 export class RestaurantsModule {}
