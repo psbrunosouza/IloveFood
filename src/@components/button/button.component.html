@@ -1,1 +1,11 @@
-<button type="htmlType">{{ text }}</button>
+<button
+  type="htmlType"
+  [ngStyle]="{
+    'padding-top': size * 3 + 'px',
+    'padding-bottom': size * 3 + 'px',
+    'padding-left': size * 7 + 'px',
+    'padding-right': size * 7 + 'px'
+  }"
+>
+  {{ text }}
+</button>

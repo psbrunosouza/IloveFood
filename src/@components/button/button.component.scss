@@ -1,7 +1,7 @@
-@import '../../@theme/theme.scss';
+@import "../../@theme/theme.scss";
 
 button {
-  padding: 8px 8px;
+  padding: 8px;
   border-radius: 5px;
   outline: none;
   border: none;
@@ -10,7 +10,7 @@ button {
   color: #fff;
   transition: ease-in-out 0.2s;
 
-  &:hover{
+  &:hover {
     background-color: $base-rubro-hover-color;
   }
 }
