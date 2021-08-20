@@ -1,3 +1,4 @@
+import { HttpErrorResponse } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { Restaurant } from '@core/data/restaurant';
 import { RestaurantsService } from './restaurants.service';

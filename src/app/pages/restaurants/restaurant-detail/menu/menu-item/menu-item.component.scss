@@ -1,0 +1,29 @@
+section.menu-item {
+  display: flex;
+  position: relative;
+
+  div.image {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: gray;
+    margin-right: 25px;
+  }
+
+  article.content {
+    h3 {
+      margin-top: 8px;
+    }
+
+    p {
+      margin-top: 6px;
+    }
+
+    tem-button {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      margin: 0 24px 24px 0;
+    }
+  }
+}

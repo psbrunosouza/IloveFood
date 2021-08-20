@@ -1,7 +1,7 @@
 <div class="card">
   <div class="image">
     <div class="rate">
-      <mat-icon >star_outline</mat-icon>
+      <mat-icon>star_outline</mat-icon>
 
       <p class="text-rate">{{ restaurant.rating }}</p>
     </div>
@@ -11,8 +11,10 @@
     <h3 class="title">{{ restaurant.name }}</h3>
     <p class="description">{{ restaurant.category }}</p>
     <div class="actions">
-      <p class="tag">{{ restaurant.deliveryEstimate}} delivery estimate</p>
-      <tem-button text="ORDER"></tem-button>
+      <p class="tag">
+        <mat-icon>two_wheeler</mat-icon> {{ restaurant.deliveryEstimate }}
+      </p>
+      <tem-button text="ORDER" (click)="seeRestaurant(restaurant.id)"></tem-button>
     </div>
   </div>
 </div>
