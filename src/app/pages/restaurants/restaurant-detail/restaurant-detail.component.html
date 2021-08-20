@@ -1,0 +1,34 @@
+<div class="container">
+  <main>
+    <section>
+      <section class="brand">
+        <div class="brand-content">
+          <div
+            class="image"
+            style="background: url(restaurant.imagePath)"
+          ></div>
+          <diV class="score"
+            ><mat-icon>star_outline</mat-icon> {{ restaurant.rating }}</diV
+          >
+          <div class="info">
+            <h3>{{ restaurant.name }}</h3>
+            <span>{{ restaurant.about?.substr(0, 42) + "..." }}</span>
+          </div>
+          <div class="category">
+            <p>{{ restaurant.category }}</p>
+          </div>
+          <div class="opening-hours">
+            <p>{{ restaurant.hours }}</p>
+          </div>
+        </div>
+      </section>
+      <com-tab-navigation></com-tab-navigation>
+      <section>
+        <router-outlet></router-outlet>
+      </section>
+    </section>
+  </main>
+  <aside>
+    <lov-cart></lov-cart>
+  </aside>
+</div>

@@ -1,0 +1,107 @@
+div.container {
+  display: flex;
+  position: relative;
+
+  main {
+    width: 60%;
+    padding: 24px;
+
+    section {
+      section.brand {
+        height: 148px;
+        background-color: #fff;
+        border-radius: 6px;
+
+        div.brand-content {
+          display: flex;
+          height: 100%;
+          border-radius: 6px;
+          position: relative;
+
+          div.image {
+            border-bottom-left-radius: 6px;
+            border-top-left-radius: 6px;
+            width: 100%;
+            height: 100%;
+            z-index: 100;
+            background-size: cover;
+            width: 50%;
+            background-position: center;
+            position: relative;
+            opacity: 0.8;
+            transition: opacity 0.2s;
+          }
+
+          div.image:after {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: -23px;
+            border-radius: 0;
+            margin-right: -40px;
+            z-index: 200;
+            width: 84px;
+            height: 130%;
+            background: #fff;
+            filter: blur(16px);
+          }
+
+          div.info {
+            position: absolute;
+            z-index: 300;
+            bottom: 0;
+            left: 0;
+            color: #000;
+            margin: 0 0 16px 16px;
+
+            h3 {
+            }
+
+            span {
+            }
+          }
+
+          div.score {
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin: 16px 0 0 16px;
+            z-index: 300;
+            display: flex;
+            align-content: center;
+            color: #000;
+          }
+
+          div.category {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            margin: 0 16px 16px 0;
+            z-index: 300;
+            font-style: italic;
+          }
+
+          div.opening-hours {
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin: 16px 16px 0 0;
+            z-index: 300;
+          }
+        }
+
+        div.brand-content div.image:hover {
+          opacity: 0.825;
+        }
+      }
+    }
+  }
+
+  aside {
+    width: 40%;
+    height: calc(100vh - 42px - 32px);
+    padding: 24px;
+    position: fixed;
+    right: 0;
+  }
+}

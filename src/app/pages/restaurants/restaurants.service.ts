@@ -13,4 +13,10 @@ export class RestaurantsService {
   listRestaurants(): Observable<Restaurant[]> {
     return this.http.get<Restaurant[]>(`${environment.base_url}/restaurants`);
   }
+
+  findRestaurant(id: string): Observable<Restaurant> {
+    return this.http.get<Restaurant>(
+      `${environment.base_url}/restaurants/${id}`
+    );
+  }
 }

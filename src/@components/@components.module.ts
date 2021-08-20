@@ -5,6 +5,8 @@ import { FooterTemplateComponent } from './footer-template/footer-template.compo
 import { MenuComponent } from './header-template/components/menu/menu.component';
 import { ButtonComponent } from './button/button.component';
 import { RouterModule } from '@angular/router';
+import { DividerComponent } from './divider/divider.component';
+import { TabNavigationComponent } from './tab-navigation/tab-navigation.component';
 
 @NgModule({
   declarations: [
@@ -12,6 +14,8 @@ import { RouterModule } from '@angular/router';
     FooterTemplateComponent,
     MenuComponent,
     ButtonComponent,
+    DividerComponent,
+    TabNavigationComponent,
   ],
   imports: [
     CommonModule,
@@ -21,6 +25,8 @@ import { RouterModule } from '@angular/router';
     HeaderTemplateComponent,
     FooterTemplateComponent,
     ButtonComponent,
+    DividerComponent,
+    TabNavigationComponent
   ]
 })
 export class ComponentsModule { }
