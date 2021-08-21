@@ -7,10 +7,18 @@
     }"
   ></div>
   <article class="content">
+    <p class="price">{{ menuItem.price | currency: "BRL":true }}</p>
     <h3>{{ menuItem.name }}</h3>
-    <p>{{ menuItem.description }}</p>
-    <p>{{ menuItem.price | currency: "BRL":true }}</p>
-    <tem-button icon="add" htmlType="button" [size]="2" text="ADD TO CART">
+    <p class="description">{{ menuItem.description }}</p>
+  </article>
+  <article class="action">
+    <tem-button
+      (click)="emitAddEvent()"
+      icon="add"
+      htmlType="button"
+      [size]="2"
+      text="ADD TO CART"
+    >
     </tem-button>
   </article>
 </section>

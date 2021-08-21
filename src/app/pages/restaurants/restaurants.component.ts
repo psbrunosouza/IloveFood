@@ -8,7 +8,7 @@ import { RestaurantsService } from './restaurants.service';
   templateUrl: './restaurants.component.html',
   styleUrls: ['./restaurants.component.scss'],
 })
-export class RestaurantsComponent implements OnInit, OnDestroy {
+export class RestaurantsComponent implements OnInit {
   restaurants: Restaurant[];
 
   constructor(private restaurantsService: RestaurantsService) {}
@@ -17,14 +17,9 @@ export class RestaurantsComponent implements OnInit, OnDestroy {
     this.listRestaurants();
   }
 
-  ngOnDestroy(): void {
-    this.restaurantsService.restaurants = [];
-  }
-
   listRestaurants(): void {
     this.restaurantsService.listRestaurants().subscribe((response) => {
       this.restaurants = response;
-      this.restaurantsService.restaurants = this.restaurants;
     });
   }
 }

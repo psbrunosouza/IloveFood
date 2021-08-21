@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { RestaurantsService } from '../../restaurants.service';
-import { MenuItem } from './menu-item/menu-item';
+import { MenuItem } from './menu-item/menu-item.data';
 
 @Component({
   selector: 'lov-menu',
@@ -25,5 +25,9 @@ export class MenuComponent implements OnInit {
       const menuItems = response;
       this.menuItems = menuItems;
     });
+  }
+
+  addMenuItem(menuItem: MenuItem): void {
+    console.log(menuItem);
   }
 }
