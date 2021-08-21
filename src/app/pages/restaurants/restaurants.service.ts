@@ -23,7 +23,9 @@ export class RestaurantsService {
     );
   }
 
-  listRestaurantMenu(): Observable<MenuItem[]> {
-    return this.http.get<MenuItem[]>(`${environment.base_url}/menu`);
+  listRestaurantMenu(id: string): Observable<MenuItem[]> {
+    return this.http.get<MenuItem[]>(
+      `${environment.base_url}/restaurants/${id}/menu`
+    );
   }
 }

@@ -1,13 +1,16 @@
 <section class="menu-item">
   <div
     class="image"
-    [ngStyle]="{ 'background-image': 'url(' + menuItem.imagePath + ')' }"
+    [ngStyle]="{
+      'background-image': 'url(' + menuItem.imagePath + ')',
+      'background-size': 'cover'
+    }"
   ></div>
   <article class="content">
     <h3>{{ menuItem.name }}</h3>
     <p>{{ menuItem.description }}</p>
     <p>{{ menuItem.price | currency: "BRL":true }}</p>
-    <tem-button icon="add" htmlType="button" [size]="2" text="ORDER">
+    <tem-button icon="add" htmlType="button" [size]="2" text="ADD TO CART">
     </tem-button>
   </article>
 </section>
