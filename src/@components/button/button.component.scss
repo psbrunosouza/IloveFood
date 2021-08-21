@@ -10,6 +10,10 @@ button {
   color: #fff;
   transition: ease-in-out 0.2s;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   &:hover {
     background-color: $base-rubro-hover-color;
   }

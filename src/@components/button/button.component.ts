@@ -10,6 +10,7 @@ export class ButtonComponent implements OnInit {
   @Input() color: string;
   @Input() htmlType: string;
   @Input() size: number;
+  @Input() icon: string;
 
   constructor() {}
 

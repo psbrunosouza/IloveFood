@@ -1,4 +1,6 @@
 <div class="divider"></div>
-<com-menu-item></com-menu-item>
+<div *ngFor="let menuItem of menuItems">
+  <com-menu-item [menuItem]="menuItem"></com-menu-item>
+</div>
 <div class="divider"></div>
 <com-divider color="#dedede" [size]="2"></com-divider>

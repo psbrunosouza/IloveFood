@@ -4,8 +4,10 @@
     'padding-top': size * 3 + 'px',
     'padding-bottom': size * 3 + 'px',
     'padding-left': size * 7 + 'px',
-    'padding-right': size * 7 + 'px'
+    'padding-right': size * 7 + 'px',
+    'background-color': color
   }"
 >
-  {{ text }}
+  <mat-icon *ngIf="icon">{{ icon }}</mat-icon>
+  <p>{{ text }}</p>
 </button>

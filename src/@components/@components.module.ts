@@ -7,6 +7,7 @@ import { ButtonComponent } from './button/button.component';
 import { RouterModule } from '@angular/router';
 import { DividerComponent } from './divider/divider.component';
 import { TabNavigationComponent } from './tab-navigation/tab-navigation.component';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -17,16 +18,13 @@ import { TabNavigationComponent } from './tab-navigation/tab-navigation.componen
     DividerComponent,
     TabNavigationComponent,
   ],
-  imports: [
-    CommonModule,
-    RouterModule,
-  ],
+  imports: [CommonModule, RouterModule, MatIconModule],
   exports: [
     HeaderTemplateComponent,
     FooterTemplateComponent,
     ButtonComponent,
     DividerComponent,
-    TabNavigationComponent
-  ]
+    TabNavigationComponent,
+  ],
 })
-export class ComponentsModule { }
+export class ComponentsModule {}
