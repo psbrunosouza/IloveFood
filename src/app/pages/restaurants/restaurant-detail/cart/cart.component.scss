@@ -1,10 +1,33 @@
-div {
+div.cart {
+  display: flex;
+  flex-direction: column;
   background-color: #fff;
   height: 100%;
   width: 100%;
   border-radius: 6px;
   padding: 24px;
-  h3 {
-    margin-bottom: 16px;
+
+  div.cart-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+
+    mat-icon {
+      margin-left: 8px;
+      margin-right: 4px;
+    }
+  }
+
+  div.content {
+    flex: 1;
+  }
+
+  div.actions {
+    display: flex;
+    justify-content: flex-end;
+
+    tem-button {
+      margin-left: 8px;
+    }
   }
 }

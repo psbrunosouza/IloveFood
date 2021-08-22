@@ -1,4 +1,12 @@
 <div class="cart">
-  <h3>Cart</h3>
+  <div class="cart-title">
+    <mat-icon>shopping_cart</mat-icon>
+    <h3>Cart</h3>
+  </div>
   <com-divider color="#dedede" borderStyle="solid" [size]="1"></com-divider>
+  <div class="content"></div>
+  <div class="actions">
+    <tem-button [size]="3" icon="clear_all" text="CLEAR"></tem-button>
+    <tem-button [size]="3" icon="local_mall" text="BUY"></tem-button>
+  </div>
 </div>

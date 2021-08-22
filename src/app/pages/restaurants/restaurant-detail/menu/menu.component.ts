@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { RestaurantsService } from '../../restaurants.service';
-import { MenuItem } from './menu-item/menu-item.data';
+import { MenuItem } from './menu-item/menu-item';
 
 @Component({
   selector: 'lov-menu',

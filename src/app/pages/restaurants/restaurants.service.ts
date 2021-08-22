@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { Restaurant } from '@core/data/restaurant';
 import { environment } from 'environments/environment';
 import { Observable } from 'rxjs/internal/Observable';
-import { MenuItem } from './restaurant-detail/menu/menu-item/menu-item.data';
+import { MenuItem } from './restaurant-detail/menu/menu-item/menu-item';
 
 @Injectable({
   providedIn: 'root',

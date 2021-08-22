@@ -1,4 +1,4 @@
-@import '../../../../@theme/theme.scss';
+@import "../../../../@theme/theme.scss";
 
 div.card {
   width: 380px;
@@ -25,11 +25,11 @@ div.card {
       align-items: center;
       justify-content: space-around;
 
-      mat-icon{
+      mat-icon {
         color: $text-light-color;
       }
 
-      p.text-rate{
+      p.text-rate {
         font-weight: 400;
         color: $text-light-color;
       }
@@ -70,7 +70,7 @@ div.card {
         margin-right: 12px;
       }
 
-      p.tag{
+      p.tag {
         color: #808080;
         padding: 2px 8px;
         border-radius: 6px;
