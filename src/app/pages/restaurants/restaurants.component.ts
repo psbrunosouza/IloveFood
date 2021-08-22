@@ -1,5 +1,5 @@
 import { HttpErrorResponse } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Restaurant } from '@core/data/restaurant';
 import { RestaurantsService } from './restaurants.service';
 
@@ -14,8 +14,12 @@ export class RestaurantsComponent implements OnInit {
   constructor(private restaurantsService: RestaurantsService) {}
 
   ngOnInit(): void {
-    this.restaurantsService
-      .listRestaurants()
-      .subscribe((response) => (this.restaurants = response));
+    this.listRestaurants();
+  }
+
+  listRestaurants(): void {
+    this.restaurantsService.listRestaurants().subscribe((response) => {
+      this.restaurants = response;
+    });
   }
 }

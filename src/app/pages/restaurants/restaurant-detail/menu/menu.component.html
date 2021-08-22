@@ -1,4 +1,9 @@
 <div class="divider"></div>
-<com-menu-item></com-menu-item>
+<div *ngFor="let menuItem of menuItems">
+  <com-menu-item
+    (add)="addMenuItem($event)"
+    [menuItem]="menuItem"
+  ></com-menu-item>
+  <com-divider color="#dedede" borderStyle="dotted" [size]="3"></com-divider>
+</div>
 <div class="divider"></div>
-<com-divider color="#dedede" [size]="2"></com-divider>

@@ -1,16 +1,25 @@
-@import '../../@theme/theme.scss';
+@import "../../@theme/theme.scss";
 
 button {
-  padding: 8px 8px;
+  padding: 8px;
   border-radius: 5px;
   outline: none;
   border: none;
   cursor: pointer;
   background-color: $base-rubro-color;
   color: #fff;
-  transition: ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
 
-  &:hover{
-    background-color: $base-rubro-hover-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    filter: brightness(1.2);
+    opacity: (0.8);
+  }
+
+  mat-icon {
+    margin-right: 8px;
   }
 }

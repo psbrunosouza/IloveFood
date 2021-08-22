@@ -17,11 +17,12 @@ export class RestaurantDetailComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.restaurantsService
-      .findRestaurant(this.route.snapshot.params['id'])
-      .subscribe((restaurant) => {
-        this.restaurant = restaurant;
-        console.log(this.restaurant);
-      });
+    this.restaurantsById(this.route.snapshot.params['id']);
+  }
+
+  restaurantsById(id: string) {
+    this.restaurantsService.findRestaurant(id).subscribe((restaurant) => {
+      this.restaurant = restaurant;
+    });
   }
 }

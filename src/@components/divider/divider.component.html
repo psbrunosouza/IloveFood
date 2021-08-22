@@ -1,4 +1,11 @@
-<div
+<hr
   class="divider"
-  [ngStyle]="{'background-color': color, 'height': size + 'px' }"
-></div>
+  [ngStyle]="{
+    'border-top': size + 'px',
+    'border-top-color': color,
+    'border-style': borderStyle,
+    'border-bottom-style': 'none',
+    'border-left-style': 'none',
+    'border-right-style': 'none'
+  }"
+/>

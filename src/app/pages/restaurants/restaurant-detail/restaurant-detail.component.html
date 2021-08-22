@@ -1,11 +1,15 @@
 <div class="container">
   <main>
-    <section>
+    <section class="restaurant-detail-content">
       <section class="brand">
         <div class="brand-content">
           <div
             class="image"
-            style="background: url(restaurant.imagePath)"
+            [ngStyle]="{
+              'background-image': 'url(' + restaurant.imagePath + ')',
+              'background-size': 'cover',
+              'background-position': 'center'
+            }"
           ></div>
           <diV class="score"
             ><mat-icon>star_outline</mat-icon> {{ restaurant.rating }}</diV
