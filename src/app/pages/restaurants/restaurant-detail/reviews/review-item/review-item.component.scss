@@ -1,0 +1,38 @@
+div.review-card {
+  width: 100%;
+  height: 120px;
+  margin-top: 8px;
+
+  display: flex;
+
+  div.image {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 86px;
+      height: 86px;
+    }
+  }
+
+  div.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    div.name {
+      display: flex;
+      align-items: center;
+
+      div.rating {
+        margin-left: 8px;
+        background-color: #e63946;
+        color: #fff;
+        font-style: italic;
+        padding: 0px 12px;
+        border-radius: 6px;
+      }
+    }
+  }
+}

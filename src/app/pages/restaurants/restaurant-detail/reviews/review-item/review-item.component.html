@@ -1,0 +1,35 @@
+<div class="review-card">
+  <div class="image">
+    <img
+      *ngIf="review.rating < 3"
+      src="assets/img/reactions/face-pissed.png"
+      alt="pissed"
+    />
+    <img
+      *ngIf="review.rating >= 3 && review.rating <= 4"
+      src="assets/img/reactions/face-normal.png"
+      alt="pissed"
+    />
+    <img
+      *ngIf="review.rating > 4"
+      src="assets/img/reactions/face-loved.png"
+      alt="pissed"
+    />
+  </div>
+  <div class="main">
+    <div class="name">
+      <h3>{{ review.name }}</h3>
+      <div class="rating">
+        <p>{{ review.rating }}</p>
+      </div>
+    </div>
+    <div class="comments">
+      <p>{{ review.comments }}</p>
+    </div>
+  </div>
+
+  <div class="details">
+    <p>{{ review.date | date: "dd/MM/yyyy" }}</p>
+  </div>
+</div>
+<com-divider color="#dedede" borderStyle="dotted" [size]="3"></com-divider>
