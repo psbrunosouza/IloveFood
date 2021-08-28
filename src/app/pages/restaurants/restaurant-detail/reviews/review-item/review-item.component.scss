@@ -5,8 +5,21 @@ div.review-card {
 
   display: flex;
 
+  div.image {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 86px;
+      height: 86px;
+    }
+  }
+
   div.main {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     div.name {
       display: flex;
