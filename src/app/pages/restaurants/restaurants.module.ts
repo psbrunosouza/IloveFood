@@ -10,6 +10,7 @@ import { CartComponent } from './restaurant-detail/cart/cart.component';
 import { MenuItemComponent } from './restaurant-detail/menu/menu-item/menu-item.component';
 import { ReviewsComponent } from './restaurant-detail/reviews/reviews.component';
 import { RouterModule } from '@angular/router';
+import { ReviewItemComponent } from './restaurant-detail/reviews/review-item/review-item.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { RouterModule } from '@angular/router';
     CartComponent,
     MenuItemComponent,
     ReviewsComponent,
+    ReviewItemComponent,
   ],
   imports: [CommonModule, ComponentsModule, MatIconModule, RouterModule],
 })
