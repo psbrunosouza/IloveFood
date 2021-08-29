@@ -11,6 +11,7 @@ import { MenuItemComponent } from './restaurant-detail/menu/menu-item/menu-item.
 import { ReviewsComponent } from './restaurant-detail/reviews/reviews.component';
 import { RouterModule } from '@angular/router';
 import { ReviewItemComponent } from './restaurant-detail/reviews/review-item/review-item.component';
+import { CartService } from './restaurant-detail/cart/cart.service';
 
 @NgModule({
   declarations: [
@@ -24,5 +25,6 @@ import { ReviewItemComponent } from './restaurant-detail/reviews/review-item/rev
     ReviewItemComponent,
   ],
   imports: [CommonModule, ComponentsModule, MatIconModule, RouterModule],
+  providers: [CartService],
 })
 export class RestaurantsModule {}

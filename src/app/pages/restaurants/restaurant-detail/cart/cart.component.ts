@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MenuItem } from '../menu/menu-item/menu-item';
+import { Cart } from './cart.data';
 import { CartService } from './cart.service';
 
 @Component({
@@ -26,5 +28,28 @@ export class CartComponent implements OnInit {
    */
   total(): number {
     return this.cartService.total();
+  }
+
+  /**
+   * method called to clear the cart list
+   */
+  clear(): void {
+    this.cartService.clear();
+  }
+
+  /**
+   * method called to remove the item from the cart
+   * @param item
+   */
+  remove(item: Cart): void {
+    this.cartService.remove(item);
+  }
+
+  /**
+   * method called to add a new item into the cart
+   * @param item
+   */
+  add(item: MenuItem): void {
+    this.cartService.add(item);
   }
 }

@@ -7,18 +7,21 @@
   <com-divider color="#dedede" borderStyle="solid" [size]="1"></com-divider>
 
   <!-- Cart content -->
-  <div *ngIf="items().length === 0" class="no-content">
+  <div *ngIf="!items().length" class="no-content">
     <img src="./assets/img/empty/empty-cart.png" alt="no data here..." />
     <p>Empty cart</p>
   </div>
 
-  <div *ngIf="items().length !== 0" class="content">
-    <div class="items">
-      <div class="item" *ngFor="let item of items()">
-        <p>{{ item.menuItem.name }}</p>
+  <div *ngIf="items().length" class="content">
+    <ul class="items">
+      <li class="item" *ngFor="let item of items()">
+        <p>{{ item.menuItem.name }} ({{ item.quantity }})x</p>
         <p>{{ item.totalByQuantityItem() | currency: "BRL":true }}</p>
-      </div>
-    </div>
+        <a (click)="remove(item)">
+          <mat-icon>highlight_off</mat-icon>
+        </a>
+      </li>
+    </ul>
     <div class="total">
       <p>{{ total() | currency: "BRL":true }}</p>
     </div>
@@ -26,7 +29,12 @@
 
   <!-- Cart Action buttons -->
   <div class="actions">
-    <tem-button [size]="3" icon="clear_all" text="CLEAR"></tem-button>
+    <tem-button
+      (click)="clear()"
+      [size]="3"
+      icon="clear_all"
+      text="CLEAR"
+    ></tem-button>
     <tem-button [size]="3" icon="local_mall" text="BUY"></tem-button>
   </div>
 </div>

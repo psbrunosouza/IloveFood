@@ -14,6 +14,10 @@ export class MenuItemComponent implements OnInit {
 
   ngOnInit(): void {}
 
+  /**
+   * emit an event passing the menuItem selected
+   * when the 'add item to cart' is clicked
+   */
   emitAddEvent(): void {
     this.add.emit(this.menuItem);
   }
